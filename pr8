@@ -1,0 +1,12 @@
+print(" Fco. Santiago. Car. Cor")
+print(" ")
+
+def contarnombres(nombres, letra):
+    contar = sum(1 for nombre in nombres if nombre.lower().startswith(letra.lower()))
+    print(f"el numero de nombres que comienzan con '{letra}' es: {contar}")
+    return contar
+
+# definimos la lista de nombres
+nombres = ["Maria", "Dania", "Sol", "Andrea", "Ambar"]
+letra = input("ingresa la letra para buscar nombres que comienzan con ella: ")
+contarnombres(nombres, letra)

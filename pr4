@@ -1,0 +1,15 @@
+print(" Fco. Santiago. Car. Cor")
+print(" ")
+
+def contarmayus(cadena):
+    contador = 0
+    for caracter in cadena:
+        if caracter.isupper():
+            contador += 1
+    print(f"El numero de letras mayusculas en '{cadena}' es: {contador}")
+    return contador
+
+# solicitando al usuario la cadena
+cadenadeusuario = input("Ingresa una cadena de texto: ")
+contarmayus(cadenadeusuario)
+

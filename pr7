@@ -1,0 +1,11 @@
+print(" Fco. Santiago. Car. Cor")
+print(" ")
+
+def mayord20(edades):
+    mayora20 = sum(1 for edad in edades if edad > 20)
+    print(f"la cantidad de personas con edades mayores a 20 es: {mayora20}")
+    return mayora20
+
+# definimos las edades
+edades = (26, 16, 36, 16, 22, 14, 23, 38, 23, 19)
+mayord20(edades)

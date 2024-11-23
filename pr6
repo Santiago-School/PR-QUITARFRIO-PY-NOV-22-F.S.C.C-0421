@@ -1,0 +1,17 @@
+print(" Fco. Santiago. Car. Cor")
+print(" ")
+
+def calcularedad(añoactual, personas):
+    for persona in personas:
+        nombre, añonacido = persona
+        edad = añoactual - añonacido
+        print(f"{nombre} cumplira {edad} años en el año {añoactual}")
+
+# solicitando entradas
+añoactual = int(input("ingresa el año actual: "))
+personas = [
+    ("Juan Lom", 1958),
+    ("Maria Correa", 1998),
+    ("Carlos Maldonado", 2001)
+]
+calcularedad(añoactual, personas)

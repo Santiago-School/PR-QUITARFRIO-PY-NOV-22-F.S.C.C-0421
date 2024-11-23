@@ -1,0 +1,15 @@
+print(" Fco. Santiago. Car. Cor")
+print(" ")
+
+def añobisiesto(ano):
+    if (ano % 4 == 0 and ano % 100 != 0) or (ano % 400 == 0):
+        print(f"el año {ano} es bisiesto")
+        return True
+    else:
+        print(f"el año {ano} no es bisiesto")
+        return False
+
+# solicitamos el año al usuario
+añodelusuario = int(input("ingresa un año para verificar si es bisiesto: "))
+añobisiesto(añodelusuario)
+

@@ -1,0 +1,11 @@
+print(" Fco. Santiago. Car. Cor")
+print(" ")
+
+def binarioaentero(binario):
+    entero = int(binario, 2)
+    print(f"el numero binario {binario} en entero es: {entero}")
+    return entero
+
+# asignando valor
+binario = "101011101"
+binarioaentero(binario)

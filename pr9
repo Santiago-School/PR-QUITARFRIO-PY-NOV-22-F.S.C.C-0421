@@ -1,0 +1,13 @@
+print(" Fco. Santiago. Car. Cor")
+print(" ")
+
+def contarvocales(palabra):
+    vocales = "aeiou"
+    conteodevocales = {vocal: palabra.lower().count(vocal) for vocal in vocales}
+    print(f"el conteo de vocales en '{palabra}' es: {conteodevocales}")
+    return conteodevocales
+
+# solicitamos la palabra al usuario
+palabradelusuario = input("ingresa una palabra: ")
+contarvocales(palabradelusuario)
+
